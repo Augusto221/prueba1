@@ -1,0 +1,84 @@
+/* Responsive adjustments for different screen sizes */
+@media (max-width: 1200px) {
+    .content .title {
+        font-size: 1.8em;
+    }
+
+    .content .type {
+        font-size: 1.3em;
+    }
+
+    .content .description {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 992px) {
+    .content .title {
+        font-size: 1.6em;
+    }
+
+    .content .type {
+        font-size: 1.2em;
+    }
+
+    .content .description {
+        font-size: 0.85em;
+    }
+
+    .content {
+        top: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    .content .title {
+        font-size: 1.4em;
+    }
+
+    .content .type {
+        font-size: 1.1em;
+    }
+
+    .content .description {
+        font-size: 0.8em;
+    }
+
+    .content {
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .content .title {
+        font-size: 1.2em;
+    }
+
+    .content .type {
+        font-size: 1em;
+    }
+
+    .content .description {
+        font-size: 0.75em;
+    }
+
+    .content {
+        top: 40%;
+    }
+
+    .content .button button {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 678px) {
+    .slider .list .item .content {
+        padding-right: 0;
+    }
+
+    .slider .list .item .content .title {
+        font-size: 30px;
+    }
+}
