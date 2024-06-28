@@ -39,6 +39,35 @@ header nav a.active, header nav a:hover{
     border-radius: 2px;
 }
 
+/* Container section  */
+.container {
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+}
+h1 {
+    color: #0277bd; /* Azul más oscuro */
+    margin-bottom: 20px;
+}
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.cta-button {
+    background-color: #4caf50; /* Verde */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.cta-button:hover {
+    background-color: #388e3c; /* Verde más oscuro */
+}
+
+
 /* slider section  */
 
 .slider{
@@ -46,14 +75,18 @@ header nav a.active, header nav a:hover{
     height: 100vh;
     overflow: hidden;
     position: relative;
-    margin-top: -50px;
+    /* margin-top: -50px; */
 }
 
 .slider .list .item{
-    width: 100%;
-    height: 100%;
+    width: 70%;
+    height: 60%;
     position: absolute;
     inset: 0 0 0 0;
+    display: flex;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
 }
 
 .slider .list .item img{
@@ -86,7 +119,17 @@ header nav a.active, header nav a:hover{
     color:darkcyan;
 }
 
+.slider .list .item .content .first-description{
+    
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    letter-spacing: 0.07em;
+    font-weight: 500;
+}
+
 .slider .list .item .content .description{
+    display: none;
     font-size: 20px;
     line-height: 1.5;
     margin-bottom: 20px;
@@ -182,6 +225,7 @@ header nav a.active, header nav a:hover{
 
 .slider .list .item:nth-child(1) .content .title,
 .slider .list .item:nth-child(1) .content .type,
+.slider .list .item:nth-child(1) .content .first-description,
 .slider .list .item:nth-child(1) .content .description,
 .slider .list .item:nth-child(1) .content .button{
     transform: translateY(50px);
@@ -191,6 +235,11 @@ header nav a.active, header nav a:hover{
 }
 
 @keyframes showContent{
+    from {
+        transform: translateY(50px);
+        filter: blur(20px);
+        opacity: 0;
+    }
     to{
         transform: translateY(0px);
         filter: blur(00px);
@@ -307,12 +356,15 @@ header nav a.active, header nav a:hover{
 }
 
 @media screen and (max-width: 678px) {
-    .slider .list .item .content{
+    .slider .list .item .content .description{
         padding-right: 0;
     }
 
     .slider .list .item .content .title{
         font-size: 30px;
+    }
+    .description{
+        font-size: 1rem;
     }
 }
 
@@ -325,6 +377,10 @@ header nav a.active, header nav a:hover{
     .slider .list .item .content .title{
         font-size: 30px;
     }
+
+    .description{
+        font-size: 1rem;
+    }
 }
 
 @media (min-width:480px)  { 
@@ -335,6 +391,10 @@ header nav a.active, header nav a:hover{
 
     .slider .list .item .content .title{
         font-size: 30px;
+    }
+
+    .description{
+        font-size: 1rem;
     }
 }
     
@@ -347,6 +407,10 @@ header nav a.active, header nav a:hover{
     .slider .list .item .content .title{
         font-size: 30px;
     }
+
+    .description{
+        font-size: 1rem;
+    }
 }
     
 @media (min-width:801px)  { 
@@ -357,6 +421,10 @@ header nav a.active, header nav a:hover{
 
     .slider .list .item .content .title{
         font-size: 30px;
+    }
+
+    .description{
+        font-size: 1rem;
     }
 }
     
@@ -369,6 +437,10 @@ header nav a.active, header nav a:hover{
     .slider .list .item .content .title{
         font-size: 30px;
     }
+
+    .description{
+        font-size: 1rem;
+    }
 }
 
 @media (min-width:1281px) { 
@@ -379,6 +451,10 @@ header nav a.active, header nav a:hover{
 
     .slider .list .item .content .title{
         font-size: 30px;
+    }
+
+    .description{
+        font-size: 1rem;
     }
 }
 
